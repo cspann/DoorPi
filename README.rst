@@ -181,7 +181,12 @@ via `GitHub`_:
    git clone https://github.com/motom001/DoorPi.git /tmp/DoorPi
    cd /tmp/DoorPi
    sudo python setup.py install
+   # Sollte die Installation mit einer Fehlermeldung, dass requests nicht installiert ist, liegt ein Versionskonflikt bzw.
+   # eine veraltete Version von pip vor. Dann muss pip aktualisiert werden: 
+   sudo python get_pip.py
+   # Man kann abschließen die erfolgreiche Installation wie folgt testen:
    doorpi_cli --trace
+   
 
 -----------------
 Configuration
